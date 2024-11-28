@@ -1,0 +1,34 @@
+<div class="container">
+    <h1 class="form-title">Ajouter un commentaires</h1>
+        <form class="styled-form" >
+        <div class="form-group">
+            <label for="service">Nom du Service	 :</label>
+            <select id="service" name="service"  required>
+                <option value="" disabled selected>Choisissez un service</option>
+                <option value="chauffeur">Massage Suédois</option>
+                <option value="massage">Massage aux Pierres Chaudes</option>
+                <option value="chef">Chef à Domicile à Paris</option>
+                <option value="chef">Chef à Domicile - Cuisine Végétarienne</option>
+                <option value="chef">Chef à Domicile - Nice et Côte d'Azur</option>
+                <option value="chef">Chauffeur Privé à Paris</option>
+                <option value="chef">Chauffeur Privé - Disponible 24/7</option>
+                <option value="chef">Chauffeur Privé Luxe à Nice</option>
+            </select>
+        </div>
+      <div class="form-group">
+        <label for="titre">Nom  :</label> 
+        <input type="text" id="titre" name="titre"   placeholder="Entrez le titre" required>
+      </div>
+     
+      <div class="form-group">
+        <label for="prix">Commentaire :</label>
+        <input type="text" id="prix" name="prix" placeholder="Entrez le prix" required>
+      </div>
+    
+      <div class="form-buttons">
+        <button type="submit" class="btn-submit">Valider</button>
+        <button [routerLink]="'/commentaires'" type="button" class="btn-cancel">Annuler</button>
+      </div>
+    </form>
+  </div>
+  

@@ -1,0 +1,21 @@
+.header-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 20px; /* Espace entre les éléments du carrousel */
+}
+
+.carousel-item:last-child {
+    margin-right: 0; /* Supprime l'espace à droite du dernier élément */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}

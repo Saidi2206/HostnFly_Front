@@ -1,0 +1,12 @@
+.chart-container {
+    width: 1200px;
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+    margin-top: 5%;
+    background-color: #fff; /* Ajoute un arrière-plan blanc */
+    padding: 20px; /* Ajoute un peu d'espace intérieur */
+    border-radius: 8px; /* Facultatif : arrondit les coins du conteneur */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Facultatif : ajoute une ombre légère */
+  }
+  
+  /* Ajoutez ici vos styles CSS personnalisés pour le graphique */
+  

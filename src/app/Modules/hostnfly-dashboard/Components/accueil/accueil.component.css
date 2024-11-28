@@ -1,0 +1,123 @@
+.container{
+  margin-top: 50px; /* Réduit l'espacement entre les éléments */
+  margin-left: 270px;
+  width: 80%;
+}
+.property-item {
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 15px; /* Réduit l'espacement entre les éléments */
+  padding: 10px; /* Réduit le padding à l'intérieur de chaque élément */
+}
+
+/* Style pour le conteneur du filtre */
+.container.mb-4 {
+  text-align: right;
+}
+
+/* Style pour le libellé du filtre */
+label {
+  font-weight: bold;
+  margin-right: 1 0px;
+}
+
+/* Style pour le sélecteur de filtre */
+#filtre {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Style pour les options du sélecteur */
+#filtre option {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Style pour les options du sélecteur au survol */
+#filtre option:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style pour les options du sélecteur sélectionné */
+#filtre option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.smaller-container {
+  max-width: 450px; /* Ajustez cette valeur pour rendre le conteneur plus petit */
+  width: 70%;
+}
+
+.property-item:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.property-image {
+  width: 100%;
+  height: 150px; /* Réduit la hauteur de l'image */
+  object-fit: cover;
+}
+
+.property-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.property-item:hover .property-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+  color: #fff;
+}
+
+.overlay-text {
+  font-size: 16px; /* Réduit la taille de la police */
+  font-weight: bold;
+}
+
+.overlay-subtext {
+  font-size: 12px; /* Réduit la taille de la police */
+  margin-top: 5px;
+}
+
+.property-title {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px; /* Réduit la taille de la police */
+}
+
+.property-description {
+  color: #666;
+  font-size: 12px; /* Réduit la taille de la police */
+}
+
+/* Ajustements supplémentaires pour les marges et paddings */
+.p-4 {
+  padding: 1rem !important; /* Réduit le padding */
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem !important; /* Réduit la marge */
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important; /* Réduit la marge */
+}

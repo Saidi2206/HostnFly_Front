@@ -1,0 +1,43 @@
+<div class="container-xxl py-5">
+    <div class="container mb-4">
+        <label for="filtre">Filtrer par :</label>
+        <select id="filtre" (change)="chargerDonnees($event)">
+            <option value="tous">Tous</option>
+            <option value="massage">Massage</option>
+            <option value="chef">Chef</option>
+            <option value="chauffeur">Chauffeur</option>
+            <option value="Logement">Logement</option>
+        </select>
+    </div>
+    <div class="container"> 
+        <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">  
+                    <div class="col-lg-6 col-md-6 wow fadeInUp offset-right smaller-container" data-wow-delay="0.1s" *ngFor="let service of filteredServices">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a [routerLink]="'/Reservation_' + service.type"><img class="img-fluid" [src]="service.image" alt=""></a>
+                                <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Réserver</div>
+                                <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                    <a class="text-decoration-none text-primary">
+                                        Ajouter au panier <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-primary mb-3">{{ service.titre }}</h5>
+                                <a class="d-block h5 mb-2">{{ service.prix }}</a>
+                                <a class="mb-2 text-decoration-none" data-bs-toggle="collapse" [href]="'#collapseDescription' + service.id" role="button" aria-expanded="false" [attr.aria-controls]="'collapseDescription' + service.id">
+                                    <p class="mb-0"><i class="alt text-primary me-2"></i>Description <i class="fas fa-info-circle"></i></p>
+                                </a>
+                                <div class="collapse" [id]="'collapseDescription' + service.id">
+                                    <p>{{ service.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+</div>

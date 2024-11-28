@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 80px auto 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    font-size: 28px;
+    margin-top: 10px ;
+    color: #007bff; 
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .styled-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .styled-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .styled-form input[type="text"],
+  .styled-form input[type="tel"],
+  .styled-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-submit,
+  .btn-cancel {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-submit {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-cancel {
+    background-color: #ccc;
+    color: #333;
+  }
+  

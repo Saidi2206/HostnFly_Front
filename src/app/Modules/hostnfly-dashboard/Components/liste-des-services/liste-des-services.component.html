@@ -1,0 +1,60 @@
+
+                            <div class="dashboard-main-content">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-box">
+                                                <div class="form-title-wrap">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <h3 class="font-size-16">Service Lists</h3>
+                                                        </div>
+                                                        <div class="select-contain">
+                                                            <select class="select-contain-select" (change)="chargerDonnees($event)">
+                                                                <option value="massage">Selection un choix</option>
+                                                                <option value="massage">massage</option>
+                                                                <option value="chef">chef</option>
+                                                                <option value="chauffeur">chauffeur</option>
+                                                                <option value="logement">logement</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               <div class="form-content">
+                                                   <div class="table-form table-responsive" >
+                                                       <table class="table" >
+                                                           <thead>
+                                                           <tr>
+                                                               <th scope="col">Id</th>
+                                                               <th scope="col">titre</th>
+                                                               <th scope="col">description</th>
+                                                               <th scope="col">prix</th>
+                                                               <th scope="col">Image</th>
+                                                               <th scope="col"></th>
+                                                           </tr>
+                                                           </thead>
+                                                           <tbody *ngFor="let service of filteredServices; let i = index">
+                                                           <tr>
+                                                               <td>{{ i + 1 }}</td>
+                                                               <th scope="row">{{ service.titre }}</th>
+                                                               <td>{{ service.description }} </td>
+                                                               <td>{{ service.prix }} </td> 
+                                                               <td></td>
+                                                               <td>
+                                                                   <div class="table-content">
+                                                                    <i (click)="modifier(service._id)" class="fas fa-edit"></i>
+                                                                    <i (click)="supprimer(service._id)" class="fas fa-trash "></i> 
+                                                                   </div>
+                                                               </td>
+                                                           </tr>
+                                                           
+                                                           
+                                                          
+                                                           </tbody>
+                                                       </table>
+                                                   </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            

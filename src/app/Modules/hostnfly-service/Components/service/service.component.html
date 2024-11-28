@@ -1,0 +1,72 @@
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Nos Services</h1>
+            <p>Chez HostnFly, nous proposons une variété de services premium pour enrichir votre expérience de voyage.
+             Nos offres incluent des massages relaxants pour vous détendre après une journée de visites, des chauffeurs privés pour des déplacements sans tracas, 
+             et des chefs à domicile pour savourer des repas exquis dans le confort de votre hébergement</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <a class="cat-item d-block bg-light text-center rounded p-3"[routerLink]="'/Service_massage'">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <img class="img-fluid" src="assets/img/massage.png" alt="Icon" >
+                        </div>
+                        <h6>Massage à Domicile </h6>
+                        <span>2 Properties</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <a class="cat-item d-block bg-light text-center rounded p-3" [routerLink]="'/Service_chef'">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <img class="img-fluid" src="assets/img/chef.png" alt="Icon">
+                        </div>
+                        <h6>Chef à Domicile</h6>
+                        <span>3 Properties</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <a class="cat-item d-block bg-light text-center rounded p-3" [routerLink]="'/Service_chauffeur'">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <img class="img-fluid" src="assets/img/chauffeur.png" alt="Icon">
+                        </div>
+                        <h6>Chauffeur Privé</h6>
+                        <span>3 Properties</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="cat-item d-block bg-light text-center rounded p-3" >
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <img class="img-fluid" src="assets/img/logement.png" alt="Icon">
+                        </div>
+                        <h6> Logement</h6>
+                        <span>0 Properties</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4" *ngIf="showAdditionalServices">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s" *ngFor="let service of otherServices">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                        <div class="rounded p-4">
+                            <div class="icon mb-3">
+                                <img class="img-fluid" src="{{ service.icon }}" alt="Icon">
+                            </div>
+                            <h6>{{ service.title }}</h6>
+                            <span>{{ service.properties }} Properties</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+        <a class="btn btn-primary py-3 px-5" (click)="toggleAdditionalServices()" >Browse More Services</a>
+    </div> 
+</div>

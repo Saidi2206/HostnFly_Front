@@ -1,0 +1,142 @@
+.select-contain {
+    position: relative; 
+    width: 200px;
+    
+
+}
+
+.select-contain-select {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    appearance: none; 
+    background-color: #f8f9fa; 
+    cursor: pointer; 
+    
+}
+
+
+.select-contain-select::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    pointer-events: none; 
+}
+
+.select-contain-select option {
+    padding: 10px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+.dashboard-main-content {
+    padding: 30px; 
+    border-radius: 10px; 
+    width: 1200px;
+    margin-left: 210px; 
+    margin-top: -25px; 
+   
+
+}
+
+.container-fluid {
+    max-width: 1100px; 
+    margin-top: 80px;
+    margin-right: 140px;
+}
+
+.form-box {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.form-title-wrap {
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 20px; 
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #333; 
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+
+.font-size-14 {
+    color: #666;
+    font-size: 14px; 
+}
+.font-size-14 {
+    color: #666;
+    font-size: 24px; 
+}
+
+.table {
+    width: 100%; 
+    background-color: #fff; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.table th {
+    background-color: #ffffff; 
+    font-weight: bold; 
+}
+
+.table-content {
+    padding: 8px 0; 
+}
+.table thead th {
+    background-color: #f8f9fa; 
+    color: #6c757d;
+    font-weight: bold; 
+    padding: 12px; 
+    text-align: left; 
+}
+.theme-btn {
+    display: inline-block; 
+    padding: 8px 12px; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    color: #fff; 
+}
+
+.theme-btn-small {
+    font-size: 14px; 
+}
+
+
+.badge {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px; 
+    text-align: center;
+}
+
+.badge-success {
+    background-color: #28a745; 
+    color: #fff; 
+}
+
+.fa-edit {
+    color: rgb(89, 157, 212);
+}
+
+.fa-eye {
+    color: rgb(89, 157, 212); 
+}
